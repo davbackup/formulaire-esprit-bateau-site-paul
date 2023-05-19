@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="fr">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" />
+    <link rel="stylesheet" href="./assets/styles/index.css">
+</head>
+
+<body>
+    <div id="attente6">
+        <div id="attente6b">
+            <h2>Votre passion<br />est notre métier</h2>
+            contactez-nous
+            <form id="contactForm" action="./" method="post" onsubmit="return confirmContact(this)">
+
+                <div id="contactCoords">
+                    <label><input type="text" name="datafrm[Nom]" value="" class="oblig" placeholder="Nom" /></label>
+                    <label><input type="text" name="datafrm[Email]" value="" class="oblig"
+                            placeholder="Email" /></label>
+                    <label><input type="text" name="datafrm[Telephone]" value="" class="oblig"
+                            placeholder="Téléphone" /></label>
+                    <label><input type="text" name="datafrm[Pays]" value="" placeholder="Pays de résidence" /></label>
+                </div>
+                <div id="contactChoice">
+                    Je suis intéressé par :
+                    <label class="radio"><input type="radio" name="datafrm[Sujet]" value="Acheter un bateau"
+                            checked="checked" />
+                        <span class="label">Acheter un bateau</span></label>
+
+                    <label class="radio"><input type="radio" name="datafrm[Sujet]" value="Vendre un bateau" />
+                        <span class="label">Vendre un bateau</span></label>
+                </div>
+                <label><textarea name="datafrm[Message]" class="oblig" placeholder="Commentaires"></textarea></label>
+
+                <div id="contactSubmit"><input type="submit" value="Envoyer" /></div>
+            </form>
+        </div>
+    </div>
+</body>
+
+</html>

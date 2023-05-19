@@ -1,0 +1,376 @@
+@charset "UTF-8";
+@font-face {
+  font-family: "Poppins";
+  src: url(../fonts/Poppins-Medium.ttf);
+}
+@font-face {
+  font-family: "gothic1";
+  src: url(../fonts/BankGothic\ Lt\ BT\ Light.woff);
+}
+@font-face {
+  font-family: "gothic2";
+  src: url(../fonts/BankGothic\ Lt\ BT\ Light.woff2);
+}
+@font-face {
+  font-family: "lato1";
+  src: url(../fonts/Lato-Light.ttf);
+}
+@font-face {
+  font-family: "lato2";
+  src: url(../fonts/Lato-Regular.ttf);
+}
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed,
+figure, figcaption, footer, header, hgroup,
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-size: 100%;
+  font: inherit;
+  vertical-align: baseline;
+}
+
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure,
+footer, header, hgroup, menu, nav, section {
+  display: block;
+}
+
+body {
+  line-height: 1;
+}
+
+ol, ul {
+  list-style: none;
+}
+
+blockquote, q {
+  quotes: none;
+}
+
+blockquote:before, blockquote:after,
+q:before, q:after {
+  content: "";
+  content: none;
+}
+
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+
+html {
+  background: #fff no-repeat center center;
+  height: 100%;
+}
+
+body {
+  padding: 0;
+  margin: 0;
+  font: 12px verdana, arial, helvetica;
+  color: #000;
+  text-align: center;
+  min-height: 100%;
+}
+
+body.stop-scrolling {
+  overflow: initial;
+  height: initial;
+}
+
+html.openMenu,
+.openMenu body {
+  overflow-y: hidden;
+}
+
+section.myPage {
+  background: #fff;
+  transition: all 300ms ease-in-out 0s;
+}
+
+#boxPageOverlay,
+#boxPage,
+form label input,
+form label textarea,
+form label select,
+form .label input,
+form .label select,
+form input.submit {
+  transition: all 350ms ease-in-out 0s;
+}
+
+a {
+  color: #000;
+  transition: all 350ms ease-in-out 0s;
+}
+
+a:hover {
+  color: #333;
+}
+
+#small,
+#medium {
+  overflow-x: hidden;
+}
+
+#attente6 {
+  background: rgb(20, 33, 44);
+  height: 80vh;
+  padding: 400px 0 0;
+  font-family: "gothic2", serif;
+  font-size: 18px;
+  color: #c9e7f2;
+  letter-spacing: 0.1em;
+  line-height: 1.5em;
+}
+#attente6 h2 {
+  font-size: 48px;
+  color: #fff;
+  text-transform: uppercase;
+  margin: 0 0 40px;
+  line-height: 1.5em;
+  font-weight: normal;
+}
+@media (max-width: 1600px) {
+  #attente6 h2 {
+    font-size: 3vw;
+    margin: 0 0 2.5vw;
+  }
+}
+@media (max-width: 1000px) {
+  #attente6 h2 {
+    font-size: 27px;
+    margin: 0 0 20px;
+    line-height: 1.2em;
+  }
+}
+#attente6 #contactForm {
+  max-width: 950px;
+  width: 90%;
+  margin: 50px auto 80px;
+}
+@media (max-width: 1600px) {
+  #attente6 #contactForm {
+    margin: 3.2vw auto 5vw;
+  }
+}
+@media (max-width: 1000px) {
+  #attente6 #contactForm {
+    margin: 30px auto 50px;
+  }
+}
+#attente6 #contactForm #contactCoords {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
+#attente6 #contactForm #contactCoords label {
+  width: 48%;
+}
+@media (max-width: 1000px) {
+  #attente6 #contactForm #contactCoords label {
+    width: 100%;
+  }
+}
+#attente6 #contactForm #contactCoords label input {
+  outline: none;
+  height: 65px;
+  display: block;
+  margin: 0 0 25px;
+  padding: 0 45px;
+  border-radius: 20px;
+  border: none;
+  font-size: 18px;
+  letter-spacing: 0.1em;
+  font-family: "lato1", serif;
+  color: #14212c;
+  box-sizing: border-box;
+  width: 100%;
+}
+@media (max-width: 1600px) {
+  #attente6 #contactForm #contactCoords label input {
+    font-size: 1.13vw;
+    height: 4.1vw;
+    padding: 0 2.8vw;
+    border-radius: 1.2vw;
+  }
+}
+@media (max-width: 1300px) {
+  #attente6 #contactForm #contactCoords label input {
+    font-size: 1.6vw;
+  }
+}
+@media (max-width: 1000px) {
+  #attente6 #contactForm #contactCoords label input {
+    height: 40px;
+    font-size: 17px;
+    padding: 0 20px;
+    border-radius: 10px;
+  }
+}
+#attente6 #contactForm #contactChoice {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  align-items: center;
+  background: #fff;
+  border-radius: 20px;
+  color: rgba(19, 33, 44, 0.5294117647);
+  font-family: "lato1", serif;
+  font-weight: 300;
+  padding: 0 45px;
+  margin: 0 0 25px;
+  line-height: 65px;
+}
+#attente6 #contactForm #contactChoice input {
+  display: none;
+}
+@media (max-width: 1600px) {
+  #attente6 #contactForm #contactChoice {
+    line-height: 4.3vw;
+    margin: 0 0 2vw;
+    padding: 0 2.8vw;
+  }
+}
+@media (max-width: 1300px) {
+  #attente6 #contactForm #contactChoice {
+    font-size: 1.6vw;
+  }
+}
+@media (max-width: 1000px) {
+  #attente6 #contactForm #contactChoice {
+    margin: 0 0 20px;
+    padding: 11px 20px 20px;
+    line-height: 40px;
+    font-size: 17px;
+    flex-direction: column;
+    align-items: flex-start;
+  }
+}
+#attente6 #contactForm #contactChoice .label {
+  font-family: "lato2", serif;
+  cursor: pointer;
+}
+#attente6 #contactForm #contactChoice .label::before {
+  content: "";
+  display: inline-block;
+  width: 20px;
+  height: 20px;
+  line-height: 20px;
+  background: #eee;
+  vertical-align: middle;
+  color: #eee;
+  font-size: 1em;
+  transition: all 200ms ease-out;
+  text-align: center;
+  border: 2px solid #ccc;
+  border-radius: 50px;
+  margin-right: 10px;
+  transform: translateY(-8%);
+}
+#attente6 #contactForm #contactChoice [type=radio]:checked + .label:before {
+  background-color: #14212c !important;
+  color: #eee !important;
+  border-color: #14212c !important;
+  content: "✔";
+  font-size: 16px;
+  font-weight: bold;
+  vertical-align: middle;
+  transform: translateY(-8%);
+  transition: all 200ms ease-out;
+}
+#attente6 #contactForm label textarea {
+  outline: none;
+  resize: none;
+  padding: 0 45px;
+  height: 65px;
+  border-radius: 20px;
+  color: rgba(19, 33, 44, 0.5294117647);
+  font-family: "lato1", serif;
+  font-weight: 300;
+  font-size: 18px;
+  letter-spacing: 0.1em;
+  margin: 0 0 25px;
+  display: block;
+  width: 100%;
+  box-sizing: border-box;
+  line-height: 60px;
+}
+@media (max-width: 1600px) {
+  #attente6 #contactForm label textarea {
+    padding: 0.8vw 2.8vw 0.3vw;
+    font-size: 1.13vw;
+    height: 4.1vw;
+    border-radius: 1.2vw;
+    line-height: 25px;
+  }
+}
+@media (max-width: 1300px) {
+  #attente6 #contactForm label textarea {
+    font-size: 1.6vw;
+  }
+}
+@media (max-width: 1000px) {
+  #attente6 #contactForm label textarea {
+    height: 40px;
+    font-size: 17PX;
+    padding: 0 20px;
+    border-radius: 10px;
+    line-height: 35px;
+  }
+}
+#attente6 #contactForm #contactSubmit {
+  text-align: center;
+}
+#attente6 #contactForm #contactSubmit input {
+  height: 65px;
+  background: none;
+  border: 2px solid #c9e7f2;
+  color: rgba(201, 231, 242, 0.7);
+  cursor: pointer;
+  transition: all 350ms ease-in-out 0s;
+  font-size: 25px;
+  font-family: "gothic2", serif;
+  width: 100%;
+  border-radius: 20px;
+  margin: 0 auto 30px;
+}
+@media (max-width: 1600px) {
+  #attente6 #contactForm #contactSubmit input {
+    margin: 0 0 2vw;
+    font-size: 1.6vw;
+    border-radius: 1.2vw;
+    font-size: 1.13vw;
+    height: 4.1vw;
+    padding: 0 2.8vw;
+  }
+}
+@media (max-width: 1300px) {
+  #attente6 #contactForm #contactSubmit input {
+    font-size: 1.8vw;
+  }
+}
+@media (max-width: 1000px) {
+  #attente6 #contactForm #contactSubmit input {
+    height: 40px;
+    font-size: 17px;
+    padding: 0 20px;
+    border-radius: 10px;
+  }
+}
+#attente6 #contactForm #contactSubmit input:hover {
+  background: #c9e7f2;
+  color: #14212c;
+}/*# sourceMappingURL=index.css.map */
